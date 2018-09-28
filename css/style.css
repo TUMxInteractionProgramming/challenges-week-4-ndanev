@@ -95,6 +95,7 @@ h1 #channel-star {
     /* #6 #liking #filled  */
     position:absolute;
     right: 16px;
+    
 }
 
 /* CHANNELS LIST */
@@ -127,6 +128,9 @@ li .channel-meta {
     position: absolute;
     right: 16px;
     top: 12px;
+
+    /* #7 Change the icon size to 24px (remember: Font Awesome is a font) */
+    font-size: 24px;
 }
 
 li img {
@@ -137,6 +141,19 @@ li.selected {
     color: #3F51B5;
     border-left: 4px solid #3F51B5;
 }
+
+li .channel-meta span{
+
+    background-color:#3F51B5;
+    color:white;
+    margin:2px;
+    padding:2px;
+    border-radius: 2px;
+    font-size:10px;
+    
+    align-self: center;
+}
+
 
 /* TAB BAR */
 
@@ -172,9 +189,16 @@ li.selected {
     border-bottom: 4px solid #3F51B5;
 }
 
-#tab-bar button img {
+/* #tab-bar button img { -- STYLE FROM LAST WEEK FOR IMG!
     display: block;
     margin: 0 auto 4px auto;
+}*/
+
+/* #7 fix the size and line breaks of font awesome icons */
+#tab-bar button i {
+    display: block;
+    margin: 0 auto 4px auto;
+    font-size: 24px;
 }
 
 /* #5 CHAT BAR */
@@ -183,6 +207,16 @@ li.selected {
     /* #5 #smileys #override button styles. We set the chat bar to appear like a tab-bar above. This overrides the tab bar's button scaling */
     width: auto;
     flex-grow: 0;
+}
+
+#chat-bar input {
+    border: none;
+    font-size: medium;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+
+     
 }
 
 #emojis {
