@@ -93,7 +93,7 @@ function message(text) {
 //#8 create a send message function
 function sendMessage() {
 
-    var message = new Message($('#message').val());;
+    var message = $('#message').val();
 
     $('#message').append(createMessageElement(message));
 
